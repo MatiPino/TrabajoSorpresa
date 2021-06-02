@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block Contenido %}
+<h4>Crear Recordatorios</h4>
+<form class="formulario" method="POST">
+    {% csrf_token %}
+    {{formulario.as_p}}
+    <input class="boton" type="submit" value="Guardar Recordatorio">
+</form>
+{% endblock Contenido %}
